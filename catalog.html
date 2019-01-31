@@ -7,7 +7,7 @@
 <body>
 <header class="main-header">
   <nav class="navigation">
-    <img class="logo" title="Нёрдс">
+    <a href="index.html"><img class="logo" alt="Nerd's" src="img/nerds-logo.svg" width="160"></a>
     <ul class="main-link">
       <li><a href="studio.html">Студия</a></li>
       <li><a href="clients.html">Клиенты</a></li>
@@ -15,7 +15,8 @@
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="trash">
-      <li><a class="">Корзина</a></li>
+      <!--Пока пусть иконка корзины так, если надо потом наверно можно убрать в стили-->
+      <li><a class=""><img src="img/cart-icon.svg" width="15" height="15">Корзина</a></li>
     </ul>
   </nav>
 </header>
@@ -31,43 +32,44 @@
   </section>
 
   <section class="card-block">
+    <!--Шапки для карточек не делаю, их или через или совместо со стилями сделаю-->
     <div>  <!--Карточка-->
-    <img class="card" src="sedona.svg" title="Sedona">
+    <img class="card" src="img/img-sedona.jpg" title="Sedona">
       <h3 class="card-header">Sedona</h3>
       <p class="description">Информационный сайт для туристов</p>
       <span class="button price">9 900 руб.</span>
     </div>
 
     <div>  <!--Карточка-->
-    <img class="card" src="pink_app.svg" title="Pink app">
+    <img class="card" src="img/img-pink.jpg" title="Pink app">
       <h3 class="card-header">Pink app</h3>
       <p class="description">Продуктовый лендинг приложения для IOS и Android</p>
       <span class="button price">9 900 руб.</span>
     </div>
 
     <div>  <!--Карточка-->
-    <img class="card" src="barbershop.svg" title="Barbershop">
+    <img class="card" src="img/img-barbershop.jpg" title="Barbershop">
       <h3 class="card-header">Barbershop</h3>
       <p class="description">Сайт салона красоты. Для мужчин, да</p>
       <span class="button price">9 900 руб.</span>
     </div>
 
     <div>  <!--Карточка-->
-    <img class="card" src="mishka.svg" title="Mishka">
+    <img class="card" src="img/img-mishka.jpg" title="Mishka">
       <h3 class="card-header">Mishka</h3>
       <p class="description">Интернет-магазин вязанных игрушек</p>
       <span class="button price">9 900 руб.</span>
     </div>
 
     <div>  <!--Карточка-->
-    <img class="card" src="a_plus.svg" title="A plus">
+    <img class="card" src="img/img-aplus.jpg" title="A plus">
       <h3 class="card-header">A plus</h3>
       <p class="description">Лендинг курсов повышения квалификации</p>
       <span class="button price">9 900 руб.</span>
     </div>
 
     <div>  <!--Карточка-->
-      <img class="card" src="kvast.svg" title="Кваст">
+      <img class="card" src="img/img-kvast.jpg" title="Кваст">
       <h3 class="card-header">Кваст</h3>
       <p class="description">Промо-сайт производителя крафтового кваса</p>
       <span class="button price">9 900 руб.</span>
@@ -78,10 +80,22 @@
 
 <footer class="main-footer">
   <!--Думаю карта будет тут-->
+
+  <!--И здесь иконки, тоже может в ситили потом уберу, пока пусть так-->
   <ul class="social-link">
-    <li><a href="vk.com">vk.com</a></li>
-    <li><a href="facebook.com">facebook.com</a></li>
-    <li><a href="instagram.com">instagram.com</a></li>
+    <!--style на li здесь чтобы проверить что изображения появились и не забыть об этом. При добавлении стилей это уберу-->
+    <li style="background-color: gray; width: 24px;">
+      <a href="vk.com">
+        <img src="img/vk-icon.svg" alt="vk.com" width="27" height="16"></a></li>
+
+    <li style="background-color: gray; width: 24px;">
+      <a href="facebook.com">
+        <img src="img/fb-icon.svg" alt="facebook.com" width="12" height="22"></a></li>
+
+    <li style="background-color: gray; width: 24px;">
+      <a href="instagram.com">
+        <img src="img/insta-icon.svg" alt="instagram.com" width="21" height="21"></a></li>
+
   </ul>
   <p class="offer">
     <b>Давайте дружить, это выгодно!</b>
