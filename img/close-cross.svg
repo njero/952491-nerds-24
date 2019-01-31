@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>close-cross</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-1089.000000, -1784.000000)" fill="#FB565A">
+            <g id="write-us" transform="translate(240.000000, 1706.000000)">
+                <g id="close-cross" transform="translate(849.000000, 78.000000)">
+                    <g id="Shape">
+                        <path d="M13.328,10.5 L20.699,3.129 C21.0877344,2.73781929 21.0877344,2.10618071 20.699,1.715 L19.285,0.3 C18.8938193,-0.0887343664 18.2621807,-0.0887343664 17.871,0.3 L10.5,7.672 L3.129,0.301 C2.73781929,-0.0877343664 2.10618071,-0.0877343664 1.715,0.301 L0.301,1.715 C-0.0877343664,2.10618071 -0.0877343664,2.73781929 0.301,3.129 L7.672,10.5 L0.301,17.871 C-0.0877343664,18.2621807 -0.0877343664,18.8938193 0.301,19.285 L1.716,20.699 C2.10718071,21.0877344 2.73881929,21.0877344 3.13,20.699 L10.501,13.328 L17.872,20.699 C18.2631807,21.0877344 18.8948193,21.0877344 19.286,20.699 L20.7,19.285 C21.0887344,18.8938193 21.0887344,18.2621807 20.7,17.871 L13.328,10.5 Z" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
