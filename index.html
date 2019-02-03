@@ -7,42 +7,41 @@
 <body>
 <header class="main-header">
   <nav class="navigation">
-    <img class="logo" alt="Nerd's" src="img/nerds-logo.svg" width="160">
-    <ul class="main-link">
+    <a><img class="logo" alt="Логотип дизайн-студии Нёрдс" src="img/nerds-logo.svg" width="160"></a><ul class="main-link">
       <li><a href="studio.html">Студия</a></li>
       <li><a href="clients.html">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
-    <ul class="trash">
+    <ul class="cart">
       <!--Пока пусть иконка корзины так, если надо потом наверно можно убрать в стили-->
-      <li><a class=""><img src="img/cart-icon.svg" width="15" height="15">Корзина</a></li>
+      <li><a class="cart-link" href="cart.html"><img src="img/cart-icon.svg" width="15" height="15">Корзина</a></li>
     </ul>
   </nav>
 </header>
-<main>
+<main>¬
   <!--Here will be slider-section-->
   <section class="layouts-type">
     <h2 class="hidden-head">Виды макетов</h2>
     <div class="web-sites">
-      <img alt="Веб-сайты" src="img/example-1.png" width="300" height="146">
       <h3 class="name-types">Веб-сайты</h3>
+      <img alt="Веб-сайты" src="img/example-1.png" width="300" height="146">
       <p class="types-description">Мир никогда не будет прежним после того как вы увидите наш сайт</p>
-      <span class="button _order _red">Заказать</span>
+      <button class="button _order _red" type="button">Заказать</button>
     </div>
 
     <div class="programs">
-      <img alt="Приложения" src="img/example-2.png" width="300" height="146">
       <h3 class="name-types">Приложения</h3>
+      <img alt="Приложения" src="img/example-2.png" width="300" height="146">
       <p class="types-description">Покорите топ-10 приложений в AppStore и Google Play</p>
-      <span class="button _order _red">Заказать</span>
+      <button class="button _order _red" type="button">Заказать</button>
     </div>
 
     <div class="presentation">
-      <img   alt="Презентации" src="img/example-3.png" width="300" height="146">
       <h3 class="name-types">Презентации</h3>
+      <img  alt="Презентации" src="img/example-3.png" width="300" height="146">
       <p class="types-description">Вы даже не поверите насколько вы изумительны!</p>
-      <span class="button _order _red">Заказать</span>
+      <button class="button _order _red" type="button">Заказать</button>
     </div>
   </section>
 
@@ -53,21 +52,37 @@
 </main>
 <footer class="main-footer">
   <!--Думаю карта будет тут-->
-
+  <h2 class="form_header">Напишите нам</h2>
+  <form class="contact-us-form" action="" method="post">
+    <label for="user_name">Ваше имя:</label>
+    <input type="text" id="user_name" name="name" value="" placeholder="Имя Фамилия">
+    <label for="user_email">Ваш e-mail:</label>
+    <input type="email" id="user_email" name="email" value="" placeholder="email@example.com">
+    <label for="form-text">Текст письма:</label>
+    <textarea name="form-text" id="form-text" placeholder="В свободной форме"></textarea>
+    <button class="button send-form" type="submit">Отправить</button>
+  </form>
+  <button class="button close" type="button">Закрыть</button>
   <!--И здесь иконки, тоже может в ситили потом уберу, пока пусть так-->
   <ul class="social-link">
     <!--style здесь чтобы проверить что изображения появились и не забыть об этом при добавлении стилей это уберу-->
     <li style="background-color: gray; width: 24px;">
       <a href="vk.com">
-        <img src="img/vk-icon.svg" alt="vk.com" width="27" height="16"></a></li>
+        <img src="img/vk-icon.svg" alt="vk.com"
+             width="27" height="16"
+             aria-label="Ссылка на Нердс в контакте"></a></li>
 
     <li style="background-color: gray; width: 24px;">
       <a href="facebook.com">
-        <img src="img/fb-icon.svg" alt="facebook.com" width="12" height="22"></a></li>
+        <img src="img/fb-icon.svg" alt="facebook.com"
+             width="12" height="22"
+             aria-label="Ссылка на Нердс в фейсбук"></a></li>
 
     <li style="background-color: gray; width: 24px;">
       <a href="instagram.com">
-        <img src="img/insta-icon.svg" alt="instagram.com" width="21" height="21"></a></li>
+        <img src="img/insta-icon.svg" alt="instagram.com"
+             width="21" height="21"
+             aria-label="Ссылка на Нердс в инстаграмм"></a></li>
 
   </ul>
   <p class="offer">
