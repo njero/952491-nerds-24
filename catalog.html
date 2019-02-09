@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="main-header">
-  <nav class="navigation">
-    <a><img class="logo" alt="Логотип дизайн-студии Нёрдс" src="img/nerds-logo.svg" width="160"></a>
+<header class="catalog-header">
+  <nav class="main-navigation">
+    <a href="index.html"><img class="logo" alt="Логотип дизайн-студии Нёрдс" src="img/nerds-logo.svg" width="160"></a>
     <ul class="main-link">
       <li><a href="studio.html">Студия</a></li>
       <li><a href="clients.html">Клиенты</a></li>
@@ -15,41 +18,41 @@
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="cart">
-      <!--Пока пусть иконка корзины так, если надо потом наверно можно убрать в стили-->
-      <li><a class="cart-link" href="cart.html"><img src="img/cart-icon.svg" width="15" height="15">Корзина</a></li>
+      <li><a class="cart-link" href="cart.html">Корзина</a></li>
     </ul>
   </nav>
+  <h1>Магазин готовых шаблонов</h1>
 </header>
 <main>
-  <h1>Магазин готовых шаблонов</h1>
   <!--Верхняя часть страницы (стоимость и сортировка)-->
   <section class="filters">
-    <form>
+    <h2 class="visually-hidden">Фильтр макетов</h2>
+    <form class="filter" method="get" action="">
       <fieldset>
-        <legend class="filter-header">Сетка</legend>
+        <legend>Сетка</legend>
         <ul>
           <li class="filter-option">
-            <label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                          value="adapt" checked>
-              Адаптивная</label>
+            <input disabled class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                   value="adapt" id="adapt" checked>
+            <label for="adapt"> Адаптивная</label>
           </li>
           <li class="filter-option">
-            <label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                          value="fixed">
-              Фиксированая</label>
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                   value="fixed" id="fixed">
+            <label for="fixed">Фиксированая</label>
           </li>
           <li class="filter-option">
-            <label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                          value="rubber">
-              Резиновая</label>
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                   value="rubber" id="rubber">
+            <label for="rubber">Резиновая</label>
           </li>
         </ul>
       </fieldset>
       <fieldset>
-        <legend class="filter-header">Особенности</legend>
+        <legend>Особенности</legend>
         <ul>
           <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider"
+            <input disabled class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider"
                    id="filter-slider" checked>
             <label for="filter-slider">Слайдер</label>
           </li>
@@ -82,46 +85,46 @@
 
   <section class="card-block">
     <!--Шапки для карточек не делаю, их или через или совместо со стилями сделаю-->
-    <div aria-label="Краткое описание макета">  <!--Карточка-->
-      <img  class="card" src="img/img-sedona.jpg" title="Sedona">
+    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+      <img class="car-imgd" src="img/img-sedona.jpg" title="Sedona">
       <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Sedona</a>
       <p class="description">Информационный сайт для туристов</p>
-      <div aria-label="Цена товара" class="button price">9 900 руб.</div>
+      <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
     </div>
 
-    <div aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card" src="img/img-pink.jpg" title="Pink app">
-      <a  href="pop-up-info.html" aria-label="Название макета" class="card-header">Pink app</a>
+    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+      <img class="card-img" src="img/img-pink.jpg" title="Pink app">
+      <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Pink app</a>
       <p class="description">Продуктовый лендинг приложения для IOS и Android</p>
-      <div aria-label="Цена товара" class="button price">9 900 руб.</div>
+      <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
     </div>
 
-    <div aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card" src="img/img-barbershop.jpg" title="Barbershop">
-      <a  href="pop-up-info.html" aria-label="Название макета" class="card-header">Barbershop</a>
+    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+      <img class="card-img" src="img/img-barbershop.jpg" title="Barbershop">
+      <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Barbershop</a>
       <p class="description">Сайт салона красоты. Для мужчин, да</p>
-      <div aria-label="Цена товара" class="button price">9 900 руб.</div>
+      <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
     </div>
 
-    <div aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card" src="img/img-mishka.jpg" title="Mishka">
-      <a  href="pop-up-info.html" aria-label="Название макета"  class="card-header">Mishka</a>
+    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+      <img class="card-img" src="img/img-mishka.jpg" title="Mishka">
+      <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Mishka</a>
       <p class="description">Интернет-магазин вязанных игрушек</p>
-      <div aria-label="Цена товара" class="button price">9 900 руб.</div>
+      <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
     </div>
 
-    <div aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card" src="img/img-aplus.jpg" title="A plus">
-      <a  href="pop-up-info.html" aria-label="Название макета" class="card-header">A plus</a>
+    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+      <img class="card-img" src="img/img-aplus.jpg" title="A plus">
+      <a href="pop-up-info.html" aria-label="Название макета" class="card-header">A plus</a>
       <p class="description">Лендинг курсов повышения квалификации</p>
-      <div aria-label="Цена товара" class="button price">9 900 руб.</div>
+      <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
     </div>
 
-    <div aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card" src="img/img-kvast.jpg" title="Кваст">
+    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+      <img class="card-img" src="img/img-kvast.jpg" title="Кваст">
       <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Кваст</a>
       <p class="description">Промо-сайт производителя крафтового кваса</p>
-      <div aria-label="Цена товара" class="button price">9 900 руб.</div>
+      <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
     </div>
 
   </section>
@@ -140,27 +143,24 @@
     <button class="button send-form" type="submit">Отправить</button>
   </form>
   <button class="button close" type="button">Закрыть</button>
-  <!--И здесь иконки, тоже может в ситили потом уберу, пока пусть так-->
   <ul class="social-link">
-    <!--style здесь чтобы проверить что изображения появились и не забыть об этом при добавлении стилей это уберу-->
-    <li style="background-color: gray; width: 24px;">
-      <a href="vk.com">
+    <li>
+      <a href="vk.com" class="vk-link">
         <img src="img/vk-icon.svg" alt="vk.com"
              width="27" height="16"
              aria-label="Ссылка на Нердс в контакте"></a></li>
 
-    <li style="background-color: gray; width: 24px;">
-      <a href="facebook.com">
-        <img src="img/fb-icon.svg" alt="facebook.com"
+    <li>
+      <a href="facebook.com" class="fb-link">
+        <img class="social-link-img" src="img/fb-icon.svg" alt="facebook.com"
              width="12" height="22"
              aria-label="Ссылка на Нердс в фейсбук"></a></li>
 
-    <li style="background-color: gray; width: 24px;">
-      <a href="instagram.com">
+    <li>
+      <a href="instagram.com" class="inst-link">
         <img src="img/insta-icon.svg" alt="instagram.com"
              width="21" height="21"
              aria-label="Ссылка на Нердс в инстаграмм"></a></li>
-
   </ul>
   <p class="offer">
     <b>Давайте дружить, это выгодно!</b>
