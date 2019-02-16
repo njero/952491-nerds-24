@@ -14,21 +14,48 @@ body {
   background-repeat: no-repeat;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
 
+.main-header {
+  background: url("/../952491-nerds-24/img/grey_back.jpg") #EEEEEE;
+}
+
 /* Стили для навигации */
 .main-navigation {
+  width: 1160px;
+  min-height: 125px;
+  padding: 45px 20px 10px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+
   font-size: 16px;
   line-height: 30px;
   color: #000000;
+}
 
-  background: url("/../952491-nerds-24/img/grey_back.jpg") #EEEEEE;
+.logo {
+  height: 67px;
+  width: 160px;
 }
 
 .main-link, .cart {
   list-style: none;
+  padding: 0;
+  align-self: center;
 }
 
 .main-navigation a {
@@ -61,15 +88,43 @@ a {
   margin-right: 25px;
 }
 
+/* Стили хедера страницы магазина */
+.catalog-header {
+  background: url("/../952491-nerds-24/img/grey_back.jpg") #EEEEEE;
+}
+
+.catalog-header h1 {
+  padding-top: 65px;
+  padding-bottom: 120px;
+  margin: 0;
+  font-size: 55px;
+  text-align: center;
+  line-height: 55px;
+  text-transform: none;
+}
+
 /* Стили для области видов макетов */
+.layouts-type {
+  display: flex;
+  width: 1100px;
+  margin: 80px auto;
+  padding: 0 80px 10px 20px;
+  justify-content: space-between;
+}
+
+.type-item {
+  width: 300px;
+}
+
 .type-item h3 {
   font-size: 24px;
   line-height: 30px;
 }
 
 .types-description {
-  color: #283136;
+  margin-bottom: 40px;
 
+  color: #283136;
   text-transform: none;
 }
 
@@ -133,19 +188,20 @@ a {
   background: #E5A722;
 }
 
-/* Стили хедера страницы магазина */
-.catalog-header {
-  background: url("/../952491-nerds-24/img/grey_back.jpg") #EEEEEE;
-}
-
-.catalog-header h1 {
-  font-size: 55px;
-  text-align: center;
-  line-height: 55px;
-  text-transform: none;
+/* Стили основной часть каталога*/
+.catalog-main-block {
+  display: flex;
+  width: 1160px;
+  padding: 60px 20px 55px;
+  margin: auto;
+  justify-content: space-between;
 }
 
 /* Стили фильтров */
+.filter {
+width: 260px;
+}
+
 .filter fieldset {
   border: none;
 }
@@ -153,11 +209,13 @@ a {
 .filter legend {
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .filter ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-input + label {
@@ -199,6 +257,27 @@ a {
 
 /* Стили карточек товаров */
 
+.card-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.card:nth-child(2n) {
+  margin-right: 0;
+}
+
+.card:last-child,
+.card:nth-last-child(2){
+  margin-bottom: 0;
+}
 /* Пока не знаю как сделать изменение цвета при наведении*/
 .card::before {
   content: url("/../952491-nerds-24/img/browser.svg");
@@ -221,14 +300,26 @@ a {
   width: 200px;
 }
 
-/* Ссылки на соц-сети в footer */
-.social-link {
-  list-style: none;
+/*Footer*/
+
+.main-footer {
+  display: flex;
+  width: 1160px;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
 }
 
-.social-link li {
-  width: 81px;
-  height: 81px;
+/* Ссылки на соц-сети в footer */
+.social-link {
+  display: flex;
+  width: 260px;
+  margin: 0 140px 0 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style: none;
 }
 
 .social-link a {
@@ -237,11 +328,11 @@ a {
 }
 
 .vk-link {
-  padding: 32px 26px 33px 28px;
+  padding: 30px 26px;
 }
 
 .fb-link {
-  padding: 29px 34px 30px 35px;
+  padding: 32px 34px 28px;
 }
 
 .inst-link {
@@ -259,12 +350,18 @@ a {
 }
 
 /* Рекламная подпись в footer*/
+.offer {
+  display: flex;
+  flex-direction: column;
+}
+
 .offer b {
+  margin-bottom: 10px;
   font: inherit;
   font-size: 36px;
   line-height: 36px;
   text-transform: none;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .offer span {
@@ -274,3 +371,4 @@ a {
   line-height: 22px;
   text-transform: none;
 }
+
