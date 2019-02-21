@@ -23,7 +23,37 @@
   </nav>
 </header>
 <main>
-  <!--Here will be slider-section-->
+  <section class="slider">
+    <div class="container">
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+      <div class="slider-controls">
+        <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+        <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+        <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+      </div>
+
+
+      <ul class="slider-list">
+        <li class="slider-item">
+          <h3>Долго, дорого,<br> скрупулезно.</h3>
+          <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+          <a class="slider-item-button button _red" href="#">Узнать больше</a>
+        </li>
+        <li class="slider-item">
+          <h3>Любим математику как никто другой</h3>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a class="slider-item-button button _red" href="#">Узнать больше</a>
+        </li>
+        <li class="slider-item">
+          <h3>Только ночь,<br> только хардкор</h3>
+          <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+          <a class="slider-item-button button _red" href="#">Узнать больше</a>
+        </li>
+      </ul>
+    </div>
+  </section>
   <section class="layouts-type">
     <h2 class="visually-hidden">Виды макетов</h2>
     <div class="type-item">
@@ -49,47 +79,99 @@
   </section>
 
   <article>
-    <!--Рекламный блок-->
-    <!--Партнерские ссылки-->
+    <div class="advertising">
+      <div class="info">
+        <p>Мы - маленькая, но гордая
+          дизайн-студия из Краснодара.</p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="list-header">Выполняем заказы на разработку:</p>
+        <ul class="example-list">
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для IOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="statics">
+        <img src="img/illustration.jpg">
+        <p>С 2004 года любим точность во всем:</p>
+        <table class="statics-table">
+          <tr>
+            <th>146<sup>%</sup></th>
+            <th>100<sup>%</sup></th>
+            <th>50<sup>%</sup></th>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <ul class="partner-link">
+      <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png"></a></li>
+      <hr>
+      <li><a><img src="img/logo-2.png"></a></li>
+      <hr>
+      <li><a><img src="img/logo-3.png"></a></li>
+      <hr>
+      <li><a><img src="img/logo-4.png"></a></li>
+    </ul>
   </article>
 </main>
-<footer class="main-footer">
-  <!--Думаю карта будет тут-->
-  <!--Это форма, но пока не используется пусть будет закомментирована-->
-  <!--<h2 class="form_header">Напишите нам</h2>
-  <form class="contact-us-form" action="" method="post">
-    <label for="user_name">Ваше имя:</label>
-    <input type="text" id="user_name" name="name" value="" placeholder="Имя Фамилия">
-    <label for="user_email">Ваш e-mail:</label>
-    <input type="email" id="user_email" name="email" value="" placeholder="email@example.com">
-    <label for="form-text">Текст письма:</label>
-    <textarea name="form-text" id="form-text" placeholder="В свободной форме"></textarea>
-    <button class="button send-form" type="submit">Отправить</button>
-  </form>
-  <button class="button close" type="button">Закрыть</button>-->
-  <ul class="social-link">
-    <li>
-      <a href="vk.com" class="vk-link">
-        <img src="img/vk-icon.svg" alt="vk.com"
-             width="27" height="16"
-             aria-label="Ссылка на Нердс в контакте"></a></li>
+<footer>
+  <div class="map">
+    <img src="img/map.jpg" width="1440" height="416">
+    <div class="contact-us">
+      <h4>NЁRDS DESIGN STUDIO</h4>
+      <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+      <p>тел. +7 (812) 275-75-75</p>
+      <button class="button _red" type="button">Напишите нам</button>
+    </div>
+    <img src="img/map-marker.png" class="map-marker" width="231" height="190">
+    <!--TODO: открытие формы-->
+    <section class="letter-form">
+      <h2 class="form_header">Напишите нам</h2>
+      <form class="contact-us-form" action="" method="post">
+        <p class="letter-item">
+          <label for="user_name">Ваше имя:</label>
+          <input type="text" id="user_name" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="letter-item">
+          <label for="user_email">Ваш e-mail:</label>
+          <input type="email" id="user_email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="letter-item text">
+          <label for="form-text">Текст письма:</label>
+          <textarea name="form-text" id="form-text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button _red send-form" type="submit">Отправить</button>
+      </form>
+      <button class="button form-close" type="button">Закрыть</button>
 
-    <li>
-      <a href="facebook.com" class="fb-link">
-        <img class="social-link-img" src="img/fb-icon.svg" alt="facebook.com"
-             width="12" height="22"
-             aria-label="Ссылка на Нердс в фейсбук"></a></li>
+    </section>
+  </div>
 
-    <li>
-      <a href="instagram.com" class="inst-link">
-        <img src="img/insta-icon.svg" alt="instagram.com"
-             width="21" height="21"
-             aria-label="Ссылка на Нердс в инстаграмм"></a></li>
-  </ul>
-  <p class="offer">
-    <b>Давайте дружить, это выгодно!</b>
-    <span>Скидка 10% для друзей из социальных сетей.</span>
-  </p>
+
+  <div class="main-footer">
+    <ul class="social-link">
+      <li>
+        <a href="vk.com" class="vk-link"></a>
+      </li>
+      <li>
+        <a href="facebook.com" class="fb-link"></a>
+      </li>
+      <li>
+        <a href="instagram.com" class="inst-link"></a>
+      </li>
+    </ul>
+    <p class="offer">
+      <b>Давайте дружить, это выгодно!</b>
+      <span>Скидка 10% для друзей из социальных сетей.</span>
+    </p>
+  </div>
 </footer>
 </body>
 </html>
