@@ -29,6 +29,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
@@ -111,10 +112,13 @@ img {
 
 /* Стили хедера страницы магазина */
 .catalog-header {
+  min-width: 1200px;
+
   background: url("../img/grey_back.jpg") #EEEEEE;
 }
 
 .catalog-header h1 {
+  min-width: 1200px;
   padding-top: 65px;
   padding-bottom: 120px;
   margin: 0;
@@ -246,7 +250,7 @@ img {
   text-transform: none;
 }
 
-.button {
+.slider-item-button {
   display: block;
   width: 240px;
   padding: 13px 0;
@@ -407,8 +411,24 @@ img {
   background-color: #EEEEEE;
 }
 
+.partner-link a {
+  margin: auto 55px auto 0;
+   opacity: 0.2;
+ }
+.partner-link li:last-child a {
+  display: block;
+  margin-right: 0;
+}
+
 .partner-link li {
-  opacity: 0.2;
+  display: flex;
+  opacity: 1;
+  height: 90px;
+  border-right: 2px solid #EEEEEE;
+}
+
+.partner-link li:last-child{
+  border-right: none;
 }
 
 .partner-link li:hover {
@@ -481,7 +501,7 @@ img {
 .catalog-main-block {
   display: flex;
   width: 1160px;
-  padding: 60px 20px 55px;
+  padding: 60px 20px 0;
   margin: auto;
   justify-content: space-between;
 }
@@ -491,7 +511,14 @@ img {
   width: 260px;
 }
 
+.filters {
+  margin-right: 140px;
+}
+
 .filter fieldset {
+  padding: 0;
+  margin: 0;
+
   border: none;
 }
 
@@ -501,8 +528,81 @@ img {
   font-weight: 800;
 }
 
+/* Стоимость */
 .filter fieldset:first-child legend {
-  margin-bottom: 56px;
+  margin-bottom: 49px;
+}
+
+.filter fieldset:first-child {
+  margin-bottom: 62px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding: 39px 20px 0;
+
+  background-color: #EEEEEE;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 150px;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.range-filter {
+  width: 260px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls input {
+  width: 80px;
+  height: 38px;
+
+  margin-left: 13px;
+
+  text-align: center;
+  background-color: #EEEEEE;
+  border: none;
+  border-radius: 5px;
 }
 
 .filter ul {
@@ -555,16 +655,19 @@ img {
   width: 26px;
   height: 26px;
   opacity: 0.4;
+
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
 }
 
 .filter-input:checked + .filter-checkbox::before {
   background: url("../img/checkbox-on.svg") no-repeat;
-  opacity: 1;
 }
 
-.filter-input:focus + .filter-checkbox::before {
+.filter-input:hover + .filter-checkbox::before,
+.filter-input:focus + .filter-checkbox::before{
   opacity: 1;
-  outline: thin dotted;
+
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -588,19 +691,18 @@ img {
   top: 0;
   left: 0;
 
-  width: 26px;
-  height: 26px;
+  width: 25px;
+  height: 25px;
   opacity: 0.4;
 }
 
 .filter-input:checked + .filter-radio-btn::before {
   background: url("../img/radio-on.svg") no-repeat;
-  opacity: 1;
 }
 
-.filter-input:focus + .filter-radio-btn::before {
+.filter-input:focus + .filter-radio-btn::before,
+.filter-input:hover + .filter-radio-btn::before{
   opacity: 1;
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -626,16 +728,21 @@ img {
 }
 
 /* Стили сортировки */
+.card-block {
+  display: block;
+}
 
 .sorted {
-  flex-grow: 2;
   display: flex;
-  margin-bottom: 90px;
+  margin-bottom: 96px;
   justify-content: space-between;
 }
 
 .sorted ul {
   display: flex;
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -643,19 +750,55 @@ img {
   margin-right: 26px;
 }
 
+.sorted li:first-child {
+  margin-left: 250px;
+}
+
 .sorted li:last-child {
   margin-right: 48px;
 }
 
-/* Стили карточек товаров */
-.card-block {
-/ / display: block;
+.sorted a {
+  opacity: 0.3;
 }
 
+.sorted a:hover,
+.sorted a:focus {
+  opacity: 0.6;
+}
+
+.sorted .active-sort {
+  opacity: 1;
+}
+
+.arrow {
+  margin-top: 2px;
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow a {
+  height: 0;
+  border: 11px solid #000000;
+  border-right-width: 6px;
+  border-right-color: transparent;
+  border-left-width: 6px;
+  border-left-color: transparent;
+}
+
+.arrow a:last-child {
+  border-top-width: 0;
+}
+
+.arrow a:first-child {
+  border-bottom-width: 0;
+}
+
+/* Стили карточек товаров */
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
 .card {
@@ -722,6 +865,11 @@ img {
   text-transform: none;
 }
 
+.card:hover,
+.card:active {
+  box-shadow: 0px 4px 20px 0px #d1d1d1;
+}
+
 .card:hover .description,
 .card:active .description {
   opacity: 1;
@@ -733,12 +881,61 @@ img {
   margin: 0 auto 40px;
 }
 
+.pages {
+  display: flex;
+  margin-top: 60px;
+}
+
+.pages ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-number {
+  display: block;
+  padding: 20px 25px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.next-page {
+  width: 184px;
+}
+
+.page-number,
+.next-page {
+  color: #000000;
+  background: #EEEEEE;
+}
+
+.page-number:hover,
+.page-number:focus,
+.next-page:hover,
+.next-page:focus{
+  background-color: #DFDFDF;
+}
+
+.page-number:active,
+.next-page:active {
+  color: rgba(0, 0, 0, 0.3);
+  background: #D5D5D5;
+  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.10);
+}
+
+.active-page {
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 3px #dbdbdb;
+}
+
 /*Footer*/
 .map {
   display: flex;
   position: relative;
   justify-content: center;
-  max-width: 1440px;
+  width: 1440px;
   margin: 80px auto 60px;
   height: 416px;
 }
@@ -782,8 +979,8 @@ img {
 .letter-form {
   width: 760px;
   height: 450px;
-  /*display: none;*/
-  display: block;
+  display: none;
+  /*display: block;*/
   padding: 55px 100px 85px;
 
   position: absolute;

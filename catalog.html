@@ -31,7 +31,22 @@
     <form class="filter" method="get"
           action="">
       <fieldset>
-        <legend>Стоимость</legend>
+        <legend>Стоимость:</legend>
+
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label>от <input name="min-price" type="text" value="0"></label>
+            <label>до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+
       </fieldset>
       <fieldset>
         <legend>Сетка</legend>
@@ -93,68 +108,82 @@
     <div class="sorted">
       <span>Сортировать:</span>
       <ul>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>По названию</li>
+        <li><a class="active-sort">По цене</a></li>
+        <li><a>По типу</a></li>
+        <li><a>По названию</a></li>
       </ul>
+      <div class="arrow">
+        <a class="arrow-down active-sort"></a>
+        <a class="arrow-up"></a>
+      </div>
     </div>
     <div class="cards">
-    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card-img" src="img/img-sedona.jpg" title="Sedona" width="360" height="576">
-      <div class="description">
-        <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Sedona</a>
-        <p class="description-txt">Информационный сайт для туристов</p>
-        <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
+      <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+        <img class="card-img" src="img/img-sedona.jpg" title="Sedona" width="360" height="576">
+        <div class="description">
+          <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Sedona</a>
+          <p class="description-txt">Информационный сайт для туристов</p>
+          <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
+        </div>
       </div>
+
+      <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+        <img class="card-img" src="img/img-pink.jpg" title="Pink app" width="360" height="576">
+        <div class="description">
+          <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Pink app</a>
+          <p class="description-txt">Продуктовый лендинг приложения для IOS и Android</p>
+          <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
+        </div>
+      </div>
+
+      <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+        <img class="card-img" src="img/img-barbershop.jpg" title="Barbershop" width="360" height="576">
+        <div class="description">
+          <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Barbershop</a>
+          <p class="description-txt">Сайт салона красоты. Для мужчин, да</p>
+          <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
+        </div>
+      </div>
+
+      <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+        <img class="card-img" src="img/img-mishka.jpg" title="Mishka" width="360" height="576">
+        <div class="description">
+          <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Mishka</a>
+          <p class="description-txt">Интернет-магазин вязанных игрушек</p>
+          <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
+        </div>
+      </div>
+
+      <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+        <img class="card-img" src="img/img-aplus.jpg" title="A plus" width="360" height="576">
+        <div class="description">
+          <a href="pop-up-info.html" aria-label="Название макета" class="card-header">A plus</a>
+          <p class="description-txt">Лендинг курсов повышения квалификации</p>
+          <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
+        </div>
+      </div>
+
+      <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
+        <img class="card-img" src="img/img-kvast.jpg" title="Кваст" width="360" height="576">
+        <div class="description">
+          <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Кваст</a>
+          <p class="description-txt">Промо-сайт производителя крафтового кваса</p>
+          <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card-img" src="img/img-pink.jpg" title="Pink app" width="360" height="576">
-      <div class="description">
-        <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Pink app</a>
-        <p class="description-txt">Продуктовый лендинг приложения для IOS и Android</p>
-        <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
-      </div>
+    <div class="pages">
+      <ul>
+        <li><a class="button page-number active-page">1</a></li>
+        <li><a class="button page-number">2</a></li>
+        <li><a class="button page-number">3</a></li>
+      </ul>
+      <a class="button next-page">Следующая</a>
     </div>
 
-    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card-img" src="img/img-barbershop.jpg" title="Barbershop" width="360" height="576">
-      <div class="description">
-        <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Barbershop</a>
-        <p class="description-txt">Сайт салона красоты. Для мужчин, да</p>
-        <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
-      </div>
-    </div>
-
-    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card-img" src="img/img-mishka.jpg" title="Mishka" width="360" height="576">
-      <div class="description">
-        <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Mishka</a>
-        <p class="description-txt">Интернет-магазин вязанных игрушек</p>
-        <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
-      </div>
-    </div>
-
-    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card-img" src="img/img-aplus.jpg" title="A plus" width="360" height="576">
-      <div class="description">
-        <a href="pop-up-info.html" aria-label="Название макета" class="card-header">A plus</a>
-        <p class="description-txt">Лендинг курсов повышения квалификации</p>
-        <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
-      </div>
-    </div>
-
-    <div class="card" aria-label="Краткое описание макета">  <!--Карточка-->
-      <img class="card-img" src="img/img-kvast.jpg" title="Кваст" width="360" height="576">
-      <div class="description">
-        <a href="pop-up-info.html" aria-label="Название макета" class="card-header">Кваст</a>
-        <p class="description-txt">Промо-сайт производителя крафтового кваса</p>
-        <div aria-label="Цена товара" class="button price _red">9 900 руб.</div>
-      </div>
-    </div>
-    </div>
   </section>
-  </div>
 </main>
 
 <footer>
