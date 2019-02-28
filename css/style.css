@@ -126,6 +126,15 @@ img {
   width: 160px;
 }
 
+.logo:hover,
+.logo:focus{
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
 .main-link {
   display: flex;
   flex-wrap: wrap;
@@ -144,7 +153,7 @@ img {
 
 .main-navigation a {
   display: block;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
 
   font: inherit;
   font-weight: 800;
@@ -163,7 +172,7 @@ img {
 
 .active-link {
   color: #000000;
-  border-bottom: 1px solid #FB565A;
+  border-bottom: 2px solid #FB565A;
 }
 
 .cart-link::before {
@@ -183,7 +192,7 @@ img {
 
 .catalog-header h1 {
   min-width: 1200px;
-  padding-top: 60px;
+  padding-top: 65px;
   padding-bottom: 110px;
   margin: 0;
 
@@ -486,10 +495,19 @@ img {
 }
 
 .partner-link a {
-  opacity: 0.2;
+   opacity: 0.2;
+ }
+
+.partner-link a:hover,
+.partner-link a:focus{
+  opacity: 1;
 }
 
-.partner-link li:last-child{
+.partner-link a:active {
+  opacity: 0.1;
+}
+
+.partner-link li:last-child {
   margin-right: 0;
 }
 
@@ -512,6 +530,7 @@ img {
 .academy-link {
   margin-right: 40px;
 }
+
 .barbershop-link {
   margin-right: 35px;
   margin-left: 35px;
@@ -525,6 +544,7 @@ img {
 .mishka-link {
   margin-left: 53px;
 }
+
 .partner-link li {
   display: flex;
   opacity: 1;
@@ -779,7 +799,7 @@ img {
   justify-content: space-between;
 }
 
-.sorted span{
+.sorted span {
   letter-spacing: 1px;
   font-weight: 800;
 }
@@ -1027,6 +1047,7 @@ img {
   width: 220px;
   padding: 15px 0;
 }
+
 /* Стили формы */
 /* TODO: ОЖИВИТЬ display:none!! */
 .letter-form {
@@ -1159,7 +1180,6 @@ img {
   align-items: center;
 }
 
-
 /* Ссылки на соц-сети в footer */
 .social-link {
   display: flex;
@@ -1200,7 +1220,8 @@ img {
 
 .social-link a:active {
   opacity: 0.3;
-  background-color: #E74246;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
 }
 
 /* Рекламная подпись в footer*/
