@@ -297,7 +297,6 @@ img {
 
 .slider-item:nth-child(3) {
   background: url("../img/slide-3.png") right 20px no-repeat #EEEEEE;
-
 }
 
 #product-1:checked ~ .slider-list .slider-item:nth-child(1),
@@ -391,6 +390,7 @@ img {
 
   padding: 16px 0;
 }
+
 /* Стили блока с рекламой */
 .advertising {
   display: -webkit-box;
@@ -783,7 +783,7 @@ img {
   opacity: 1;
 }
 
-.filter-input:focus + .filter-checkbox::before{
+.filter-input:focus + .filter-checkbox::before {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -824,6 +824,7 @@ img {
 .filter-input:hover + .filter-radio-btn::before {
   opacity: 1;
 }
+
 .filter-input:disabled + .filter-radio-btn::before {
   opacity: 0.1;
 
@@ -1134,7 +1135,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding:  47px 50px 51px;
+  padding: 47px 50px 51px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1244,8 +1245,8 @@ img {
   border: 2px solid #000000;
 }
 
- input.input-error,
- textarea.input-error {
+input.input-error,
+textarea.input-error {
   border: 2px solid #e74246;
   color: #e74246;
 }
