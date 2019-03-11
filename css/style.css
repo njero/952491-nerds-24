@@ -1117,6 +1117,9 @@ img {
   height: 416px;
 }
 
+.map-iframe {
+  border: none;
+}
 .map img:first-child {
   position: relative;
   height: 416px;
