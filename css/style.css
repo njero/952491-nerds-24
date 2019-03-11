@@ -220,7 +220,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
