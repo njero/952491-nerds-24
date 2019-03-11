@@ -114,7 +114,7 @@ img {
   width: 1160px;
   min-height: 65px;
 
-  padding: 45px 20px 0;
+  padding: 47px 20px 10px;
   margin: auto;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -205,7 +205,7 @@ img {
 
 .catalog-header h1 {
   min-width: 1200px;
-  padding-top: 65px;
+  padding-top: 57px;
   padding-bottom: 110px;
   margin: 0;
 
@@ -220,7 +220,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 5px 20px 0;
+  padding: 0 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -284,7 +284,7 @@ img {
 
 .slider-item {
   display: none;
-  padding: 61px 0 80px 0;
+  padding: 55px 0 80px 0;
 }
 
 .slider-item:nth-child(1) {
@@ -853,6 +853,7 @@ img {
 /* Стили сортировки */
 .card-block {
   display: block;
+  width: 760px;
 }
 
 .sorted {
@@ -942,6 +943,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 760px;
 }
 
 .card {
@@ -987,7 +989,7 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  max-height: 250px;
+  max-height: 450px;
   min-height: 230px;
 
   position: absolute;
@@ -1022,7 +1024,7 @@ img {
   line-height: 18px;
   text-transform: none;
 
-  overflow: hidden;
+  overflow: auto;
 }
 
 .card:hover,
@@ -1126,7 +1128,7 @@ img {
   display: flex;
   position: absolute;
   top: 55px;
-  left: 140px;
+  left: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 321px;
@@ -1135,7 +1137,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 47px 50px 51px;
+  padding: 50px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1163,12 +1165,10 @@ img {
 }
 
 /* Стили формы */
-/* TODO: ОЖИВИТЬ display:none!! */
 .letter-form {
   width: 760px;
   height: 450px;
-  /*display: none;*/
-  display: block;
+  display: none;
   padding: 55px 100px 85px;
 
   position: absolute;
@@ -1180,6 +1180,10 @@ img {
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 
   z-index: 3;
+}
+
+.form-show {
+  display: block;
 }
 
 .letter-form h2 {
@@ -1235,6 +1239,14 @@ img {
   border: 2px solid #d7dcde;
 }
 
+.letter-item textarea {
+   padding: 14px 15px;
+
+   border: 2px solid #EEEEEE;
+   width: 730px;
+   height: 92px;
+ }
+
 .letter-item input:hover,
 .letter-item textarea:hover {
   border: 2px solid #b4b9bb;
@@ -1245,23 +1257,18 @@ img {
   border: 2px solid #000000;
 }
 
-input.input-error,
-textarea.input-error {
-  border: 2px solid #e74246;
-  color: #e74246;
-}
-
 .text {
   display: block;
   width: 760px;
 }
 
-.letter-item textarea {
-  padding: 14px 15px;
-  border: 2px solid #EEEEEE;
-  width: 730px;
-  height: 92px;
 
+
+input.input-error,
+textarea.input-error,
+input:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
 }
 
 .map-marker {
@@ -1322,7 +1329,7 @@ textarea.input-error {
   display: -ms-flexbox;
   display: flex;
   width: 1160px;
-  padding: 10px 20px;
+  padding: 9px 20px;
   margin: auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1337,8 +1344,6 @@ textarea.input-error {
   width: 260px;
   margin: 0 140px 0 0;
   padding: 0;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1349,10 +1354,14 @@ textarea.input-error {
 .social-link a {
   display: block;
   position: relative;
-  height: 81px;
-  width: 81px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   background-color: #E1E1E1;
+}
+
+.social-link li {
+  margin-right: 11px;
 }
 
 .vk-link {
