@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,9 +28,9 @@
       <input class="visually-hidden" type="radio" id="product-2" name="toggle">
       <input class="visually-hidden" type="radio" id="product-3" name="toggle">
       <div class="slider-controls">
-        <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-        <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-        <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый слайд</label>
+        <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй слайд</label>
+        <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий слайд</label>
       </div>
       <ul class="slider-list">
         <li class="slider-item">
@@ -106,12 +105,11 @@
       </div>
     </div>
     <ul class="partner-link">
-      <li><a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-link"><img src="img/logo-1.png" width="199" height="68"
-                                                                                       alt="Логотип HTML Академии"></a>
+      <li><a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-link"><img src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Академии"></a>
       </li>
-      <li><a class="barbershop-link"><img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа Бородински"></a></li>
-      <li><a class="pink-link"><img src="img/logo-3.png" width="185" height="52" alt="Логотип дизайн-студии Нёрдс"></a></li>
-      <li><a class="mishka-link"><img src="img/logo-4.png" width="173" height="84" alt="Логотип нтернет-магазина вязанных игрушек Mishka"></a>
+      <li><a class="barbershop-link" href="#"><img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа Бородински"></a></li>
+      <li><a class="pink-link" href="#"><img src="img/logo-3.png" width="185" height="52" alt="Логотип дизайн-студии Нёрдс"></a></li>
+      <li><a class="mishka-link" href="#"><img src="img/logo-4.png" width="173" height="84" alt="Логотип нтернет-магазина вязанных игрушек Mishka"></a>
       </li>
     </ul>
   </section>
@@ -125,11 +123,11 @@
       <p class="address">191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8</p>
       <p class="number">тел. +7 (812) 275-75-75</p>
-      <a class="button red open-form">Напишите нам</a>
+      <a class="button red open-form" href="#">Напишите нам</a>
     </div>
     <section class="letter-form">
       <h2 class="form-header">Напишите нам</h2>
-      <form class="contact-us-form" method="post">
+      <form class="contact-us-form" method="post" action="#">
         <p class="letter-item">
           <label for="user_name">Ваше имя:</label>
           <input type="text" id="user_name" name="name" value="" placeholder="Имя Фамилия">
@@ -149,9 +147,9 @@
   </div>
   <div class="main-footer">
     <ul class="social-link">
-      <li><a href="vk.com" class="vk-link"></a></li>
-      <li><a href="facebook.com" class="fb-link"></a></li>
-      <li><a href="instagram.com" class="inst-link"></a></li>
+      <li><a href="vk.com" class="vk-link" aria-label="Мы в контакте"></a></li>
+      <li><a href="facebook.com" class="fb-link" aria-label="Мы в фейсбук"></a></li>
+      <li><a href="instagram.com" class="inst-link" aria-label="Мы в инстакрам"></a></li>
     </ul>
     <p class="offer">
       <b>Давайте дружить, это выгодно!</b>
