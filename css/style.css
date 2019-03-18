@@ -356,6 +356,7 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 1100px;
+  width: 1100px;
   min-height: 346px;
 
   margin: 60px auto 80px;
@@ -539,6 +540,7 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 1160px;
+  width: 1160px;
 
   padding: 50px 20px 33px;
   margin: auto;
@@ -1052,6 +1054,7 @@ img {
 .description p {
   margin: 14px auto 30px;
   max-width: 240px;
+  width: 240px;
 
   color: #666666;
   text-align: center;
@@ -1075,7 +1078,7 @@ img {
 
 .price {
   width: 200px;
-  padding: 17px 60px;
+  padding: 17px 40px;
   margin: 0 auto 40px;
 }
 
