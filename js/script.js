@@ -19,10 +19,10 @@ closeForm.addEventListener('click', function (evt) {
   write.classList.remove('form-show');
 });
 form.addEventListener("submit", function (evt) {
- if (!userName.value || !userEmail.value || !letterText.value) {
-   evt.preventDefault();
-   userName.value ? userName.classList.remove('input-error') : userName.classList.add('input-error');
-   userEmail.value ? userEmail.classList.remove('input-error') : userEmail.classList.add('input-error');
-   letterText.value ? letterText.classList.remove('input-error') : letterText.classList.add('input-error');
- }
+  if (!userName.value || !userEmail.value || !letterText.value) {
+    evt.preventDefault();
+    userName.value ? userName.classList.remove('input-error') : userName.classList.add('input-error');
+    userEmail.value ? userEmail.classList.remove('input-error') : userEmail.classList.add('input-error');
+    letterText.value ? letterText.classList.remove('input-error') : letterText.classList.add('input-error');
+  }
 });
