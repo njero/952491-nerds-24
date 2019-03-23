@@ -17,12 +17,28 @@ openForm.addEventListener('click', function (evt) {
 closeForm.addEventListener('click', function (evt) {
   evt.preventDefault();
   write.classList.remove('form-show');
+  write.classList.remove("modal-error");
+
 });
 form.addEventListener("submit", function (evt) {
   if (!userName.value || !userEmail.value || !letterText.value) {
     evt.preventDefault();
+    write.classList.remove("form-error");
+    write.offsetWidth = write.offsetWidth;
+    write.classList.add("form-error");
     userName.value ? userName.classList.remove('input-error') : userName.classList.add('input-error');
     userEmail.value ? userEmail.classList.remove('input-error') : userEmail.classList.add('input-error');
     letterText.value ? letterText.classList.remove('input-error') : letterText.classList.add('input-error');
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (write.classList.contains("form-show")) {
+      write.classList.remove("form-show");
+      write.classList.remove("form-error");
+
+    }
   }
 });
